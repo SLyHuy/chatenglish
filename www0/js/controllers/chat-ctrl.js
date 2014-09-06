@@ -1,6 +1,7 @@
-ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $ionicScrollDelegate, chatService){
+ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $ionicScrollDelegate, chatService){
 	$scope.title = 'Chat với người lạ by English';
 	$scope.chats = [];
+	// $scope.typingText = 'typing...';
 
 	console.log(userData);
 
@@ -40,32 +41,82 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $ionicScrollDe
 		});
 	}
 
+	var isTyping = false;
+	var timer;
+	var lastTimeKeyPress = 0;
+	var typingEle;
+
 	function receiveChat(data){
-		var content = {
-			type: data.from == 'system' ? 'system' : 'stranger',
-			content : data.mess
-		};
-		$scope.$apply(function(){	
+		var content;
+
+		if ($scope.chats.length > 0){
+			if ($scope.chats[$scope.chats.length - 1].type == 'typing'){
+				$scope.chats.pop();
+			}
+		}
+
+		if (data.type == 'chat'){
+			content = {
+				type: data.from == 'system' ? 'system' : 'stranger',
+				content : data.message
+			};
+
+			if (timer){
+				isTyping = false;
+				$interval.cancel(timer);
+			}
+
+		}
+		else if (data.type == 'action'){
+			if (data.action == 'typing'){
+				content = {
+					type: 'typing'
+				};
+			}
+			else{
+				
+			}
+		}
+
+		if (content){
 			$scope.chats.push(content);
+		}
+		
+		$scope.$apply(function(){
+			
 			$ionicScrollDelegate.scrollBottom(true);
 		});
 	}
 
+	
 
 	$scope.sendChat = function(){
 		var that = this;
 		that.newChat = that.newChat.trim().replace(/\s{2,}/g, ' ');
 		var newChat = that.newChat;
 		if (newChat && newChat !== ''){
-			var date = new Date();
-			chatService.sendMessage(newChat);
+			if (timer){
+				isTyping = false;
+				$interval.cancel(timer);
+			}
+
+
+			chatService.sendMessage({
+				type: 'chat',
+				message: newChat
+			});
 
 			var content = {
 				type: 'me',
 				content : newChat
 			};
-			
-			$scope.chats.push(content);
+
+			if ($scope.chats.length > 0 && $scope.chats[$scope.chats.length - 1].type == 'typing'){
+				$scope.chats.splice($scope.chats.length - 1, 0, content);
+			}
+			else{
+				$scope.chats.push(content);
+			}
 			
 			$ionicScrollDelegate.scrollBottom(true);
 
@@ -75,6 +126,40 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $ionicScrollDe
 		$scope.focusInput = true;
 	};
 
+	$scope.chatKeyPress = function(e){
+		lastTimeKeyPress = e.timeStamp;
+		if (isTyping == false){
+			isTyping = true;
+			chatService.sendMessage({
+				type: 'action',
+				action: 'typing'
+			});
+			$interval.cancel(timer);
+			timer = $interval(function(){
+				if (isTyping && (new Date()).getTime() - lastTimeKeyPress > 4000){
+					isTyping = false;
+					$interval.cancel(timer);
+					chatService.sendMessage({
+						type: 'action',
+						action: 'stop type'
+					});
+				}
+			}, 1000);
+		}
+		else{
+
+		}
+	}
+
+	// var countText = 0;
+	// $interval(function(){
+	// 	countText = (countText + 1) % 4;
+	// 	$scope.typingText = 'typing' + '...'.substr(3 - countText);
+	// 	// $scope.$apply(function(){
+	// 	// 	$scope.typingText = 'typing' + '...'.substr(3 - countText);
+	// 	// });
+
+	// }, 500);
 
 	// data = data.concat([{
 	// 	type: 'me',

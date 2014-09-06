@@ -1,0 +1,113 @@
+*****************************
+Sat, 06 Sep 2014 15:46:57 GMT uncaughtException: me is not defined
+
+ReferenceError: me is not defined
+    at WebSocket.onMessage (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:50:10)
+    at WebSocket.emit (events.js:98:17)
+    at Receiver.self._receiver.ontext (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\WebSocket.js:682:10)
+    at Receiver.opcodes.1.finish (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\Receiver.js:391:14)
+    at Receiver.expectHandler (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\Receiver.js:372:33)
+    at Receiver.add (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\Receiver.js:87:24)
+    at Socket.firstHandler (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\WebSocket.js:663:22)
+    at Socket.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:764:14)
+    at Socket.emit (events.js:92:17)
+*****************************
+
+*****************************
+Sat, 06 Sep 2014 15:56:01 GMT uncaughtException: me is not defined
+
+ReferenceError: me is not defined
+    at WebSocket.onMessage (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:50:10)
+    at WebSocket.emit (events.js:98:17)
+    at Receiver.self._receiver.ontext (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\WebSocket.js:682:10)
+    at Receiver.opcodes.1.finish (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\Receiver.js:391:14)
+    at Receiver.expectHandler (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\Receiver.js:372:33)
+    at Receiver.add (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\Receiver.js:87:24)
+    at Socket.firstHandler (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\ws\lib\WebSocket.js:663:22)
+    at Socket.emit (events.js:95:17)
+    at Socket.<anonymous> (_stream_readable.js:764:14)
+    at Socket.emit (events.js:92:17)
+*****************************
+
+*****************************
+Sat, 06 Sep 2014 17:18:53 GMT uncaughtException: Cannot set property 'strangerID' of undefined
+
+TypeError: Cannot set property 'strangerID' of undefined
+    at Object.onOpen (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:29:41)
+    at C:\Users\huyly\Documents\GitHub\chatenglish\chat\server-2.js:42:19
+    at Request._callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\fb.js:316:21)
+    at Request.self.callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:120:22)
+    at Request.emit (events.js:98:17)
+    at Request.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:555:16)
+    at Request.emit (events.js:95:17)
+    at IncomingMessage.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:517:14)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:938:16
+*****************************
+
+*****************************
+Sat, 06 Sep 2014 17:23:00 GMT uncaughtException: Cannot set property 'strangerID' of undefined
+
+TypeError: Cannot set property 'strangerID' of undefined
+    at Object.onOpen (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:29:41)
+    at C:\Users\huyly\Documents\GitHub\chatenglish\chat\server-2.js:42:19
+    at Request._callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\fb.js:316:21)
+    at Request.self.callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:120:22)
+    at Request.emit (events.js:98:17)
+    at Request.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:555:16)
+    at Request.emit (events.js:95:17)
+    at IncomingMessage.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:517:14)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:938:16
+*****************************
+
+*****************************
+Sat, 06 Sep 2014 17:25:17 GMT uncaughtException: Cannot set property 'strangerID' of undefined
+
+TypeError: Cannot set property 'strangerID' of undefined
+    at Object.onOpen (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:30:41)
+    at C:\Users\huyly\Documents\GitHub\chatenglish\chat\server-2.js:42:19
+    at Request._callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\fb.js:316:21)
+    at Request.self.callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:120:22)
+    at Request.emit (events.js:98:17)
+    at Request.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:555:16)
+    at Request.emit (events.js:95:17)
+    at IncomingMessage.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:517:14)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:938:16
+*****************************
+
+*****************************
+Sat, 06 Sep 2014 17:28:16 GMT uncaughtException: Cannot set property 'strangerID' of undefined
+
+TypeError: Cannot set property 'strangerID' of undefined
+    at Object.onOpen (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:30:41)
+    at C:\Users\huyly\Documents\GitHub\chatenglish\chat\server-2.js:42:19
+    at Request._callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\fb.js:316:21)
+    at Request.self.callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:120:22)
+    at Request.emit (events.js:98:17)
+    at Request.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:555:16)
+    at Request.emit (events.js:95:17)
+    at IncomingMessage.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:517:14)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:938:16
+*****************************
+
+*****************************
+Sat, 06 Sep 2014 17:30:30 GMT uncaughtException: Cannot set property 'strangerID' of undefined
+
+TypeError: Cannot set property 'strangerID' of undefined
+    at Object.onOpen (C:\Users\huyly\Documents\GitHub\chatenglish\chat\lib\websocket.v2.js:32:41)
+    at C:\Users\huyly\Documents\GitHub\chatenglish\chat\server-2.js:42:19
+    at Request._callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\fb.js:316:21)
+    at Request.self.callback (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:120:22)
+    at Request.emit (events.js:98:17)
+    at Request.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:555:16)
+    at Request.emit (events.js:95:17)
+    at IncomingMessage.<anonymous> (C:\Users\huyly\Documents\GitHub\chatenglish\chat\node_modules\fb\node_modules\request\main.js:517:14)
+    at IncomingMessage.emit (events.js:117:20)
+    at _stream_readable.js:938:16
+*****************************
+
+
