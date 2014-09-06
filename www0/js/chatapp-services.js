@@ -94,6 +94,9 @@ ChatApp.factory('chatService', function(/*$location, $rootScope, $http, $state, 
 	};
 
 	function sendMessage(messageData){
+		//if (typeof messageData == 'object'){
+			messageData = JSON.stringify(messageData);
+		//}
 		WebsocketService.send('message', messageData);
 		callbacks.callbackSendMessage && callbacks.callbackSendMessage();
 	};
