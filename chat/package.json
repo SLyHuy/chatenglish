@@ -1,0 +1,9 @@
+{
+	"name": "justtalkenglish",
+	"version": "0.0.1",
+	"description": "Chat English",
+	"dependencies": {
+		"ws": "~0.4.32",
+		"fb": "~0.7.0"
+	}
+}
