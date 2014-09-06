@@ -3,20 +3,20 @@ var fs = require('fs'),
 	FB = require('fb'),
 	websocket = require('./lib/websocket.v2');
 
-var https = require('https'),
-	options = {
-		key: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.key'),
-		cert: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.crt')
-	},
-	app = https.createServer(options).listen(9300, function() {
-	console.log('Server is listening on 9300');
-});
-var wss = new WebSocketServer({server: app});
-
-/* test */
-// var wss = new WebSocketServer({port: 9300}, function(){
+// var https = require('https'),
+// 	options = {
+// 		key: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.key'),
+// 		cert: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.crt')
+// 	},
+// 	app = https.createServer(options).listen(9300, function() {
 // 	console.log('Server is listening on 9300');
 // });
+// var wss = new WebSocketServer({server: app});
+
+/* test */
+var wss = new WebSocketServer({port: 9300}, function(){
+	console.log('Server is listening on 9300');
+});
 
 wss.on('connection', function(ws) {
 	websocket.sendMessage(ws, 'system', 'Loading...');
