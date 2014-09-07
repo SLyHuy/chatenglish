@@ -24,14 +24,22 @@ function startServer(){
 	/* End Run developing */
 
 	wss.on('connection', function(ws) {
-		websocket.sendMessage(ws, 'system', 'Loading...');
+		websocket.sendMessage(ws, {
+			from: 'system',
+			type: 'chat',
+			message: 'Loading...'
+		});
 		var query = require('querystring').parse(ws.upgradeReq.url.split('?')[1]);
 		FB.setAccessToken(query.accessToken);
 		FB.api('/' + query.userID, function (res){
 			console.log(JSON.stringify(res));
 			if(!res || res.error || query.userID != res.id) {
 			   	console.log(!res ? 'error occurred' : res.error);
-			   	websocket.sendMessage(ws, 'system', 'Error! Please try again.');
+			   	websocket.sendMessage(ws, {
+					from: 'system',
+					type: 'chat',
+					message: 'Error! Please try again.'
+				});
 			   	ws.close();
 			}
 			else{
