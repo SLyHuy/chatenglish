@@ -15,8 +15,6 @@ module.exports = function(ws){
 				ws.wsID = 's' + idGenerate;
 				listWs[ws.wsID] = ws;
 
-				console.log(idGenerate, listWs);
-
 				if (aClientWatingID == null){
 					aClientWatingID = ws.wsID;
 					sendMessage(ws, {
@@ -28,7 +26,6 @@ module.exports = function(ws){
 				else{
 					//Connect 2 ws
 					ws.strangerID = aClientWatingID;
-					console.log(aClientWatingID);
 					listWs[aClientWatingID].strangerID = ws.wsID;
 					aClientWatingID = null;
 
@@ -37,12 +34,18 @@ module.exports = function(ws){
 					sendMessage(ws, {
 						from: 'system',
 						type: 'chat',
-						message: 'Let\'s say "hi" with the Stranger.'
+						message: 'Let\'s say "hi" with the Stranger. He has 342 liked.',
+						stranger: {
+							liked: 342
+						}
 					});
 					sendMessage(listWs[ws.strangerID], {
 						from: 'system',
 						type: 'chat',
-						message: 'Stranger has joined the room. Let\'s say "hi".'
+						message: 'Stranger has joined the room. He has 124 liked. Let\'s say "hi".',
+						stranger: {
+							liked: 124
+						}
 					});
 				}
 			}
@@ -79,6 +82,14 @@ module.exports = function(ws){
 							from: 'stranger',
 							type: 'action',
 							action: 'stop type'
+						};
+						sendMessage(listWs[ws.strangerID], objSend);
+					}
+					else if (message.action == 'like'){
+						var objSend = {
+							from: 'system',
+							type: 'chat',
+							message: 'You have been liked by the stranger. Now your liked is 432, congratulation!'
 						};
 						sendMessage(listWs[ws.strangerID], objSend);
 					}

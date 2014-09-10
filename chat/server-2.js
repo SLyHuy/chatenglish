@@ -5,22 +5,22 @@ var fs = require('fs'),
 
 function startServer(){
 	/* Run online */
-	var https = require('https'),
-		options = {
-			key: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.key'),
-			cert: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.crt')
-		},
-		app = https.createServer(options).listen(9300, function() {
-		console.log('Server is listening on 9300');
-	});
-	var wss = new WebSocketServer({server: app});
+	// var https = require('https'),
+	// 	options = {
+	// 		key: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.key'),
+	// 		cert: fs.readFileSync('/home/swind/public_html/clients/svplus/chatenglish/lib/cert/swind.vn.crt')
+	// 	},
+	// 	app = https.createServer(options).listen(9300, function() {
+	// 	console.log('Server is listening on 9300');
+	// });
+	// var wss = new WebSocketServer({server: app});
 	/* End online */
 
 	/* Run developing */
-	// var wss = new WebSocketServer({port: 9300}, function(){
-	// 	console.log('Server is listening on 9300');
+	var wss = new WebSocketServer({port: 9300}, function(){
+		console.log('Server is listening on 9300');
 
-	// });
+	});
 	/* End Run developing */
 
 	wss.on('connection', function(ws) {
