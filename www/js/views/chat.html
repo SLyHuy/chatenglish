@@ -28,9 +28,17 @@
 	
 	<form ng-submit="sendChat()">
 		<div class="bar bar-footer sent-chat" keyboard-attach>
-			<input type="text" class="item item-input" ng-model="newChat" style="font-size: 1.2em;" focus-me="focusInput"  ng-keypress="chatKeyPress($event)"/>				
-			<input class="button button-clear texbox-button s-color" type="submit" value="Send" style="margin:0;" />	
+			<input type="text" class="item item-input" ng-model="newChat" style="font-size: 1.2em;" focus-me="focusInput"  ng-keypress="chatKeyPress($event)"/>
+			<div class="wrap-right">
+				<i class="button button-icon icon ion-happy button-sticker s-color" ng-click="toggleStickerBox()"></i>		
+				<input class="button button-clear texbox-button button-send s-color" type="submit" value="Send" style="margin:0;" />
+			<div>
 		</div>
 	</form>
-	
+
+	<!-- <div class="sticker-box" ng-show="showStickerBox">
+		<ul ng-repeat="item in stickers">
+			<li><img src="{{(linkSticker + item.file)}}"></li>
+		</ul>
+	</div> -->
 </ion-view>

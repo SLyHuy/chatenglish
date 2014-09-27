@@ -175,43 +175,9 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 		$ionicScrollDelegate.scrollBottom(true);
 	};
 
-	// var countText = 0;
-	// $interval(function(){
-	// 	countText = (countText + 1) % 4;
-	// 	$scope.typingText = 'typing' + '...'.substr(3 - countText);
-	// 	// $scope.$apply(function(){
-	// 	// 	$scope.typingText = 'typing' + '...'.substr(3 - countText);
-	// 	// });
-
-	// }, 500);
-
-	// data = data.concat([{
-	// 	type: 'me',
-	// 	content : 'You at the airport yet aaa?'
-	// },{
-	// 	type: 'me',
-	// 	content : 'I\'m in trafic. Wondering if we have to go through is customs in Toronto or San Francisco.'
-	// },{
-	// 	type: 'stranger',
-	// 	content : 'Customs in toronto'
-	// },{
-	// 	type: 'me',
-	// 	content : 'Sweet. Thx brah'
-	// },{
-	// 	type: 'time',
-	// 	date: 'Thu, Sep 19',
-	// 	time: '1:26 PM'
-	// },{
-	// 	type: 'me',
-	// 	content : 'Sub b.'
-	// },{
-	// 	type: 'time',
-	// 	date: 'Sun, Sep 22',
-	// 	time: '4:18 PM'
-	// },{
-	// 	type: 'stranger',
-	// 	content : 'Just chillin\'s and hanging out bro. What\'s your plans tomm? Are we still doing that thing we discussed about?'
-	// }]);
+	$scope.toggleStickerBox = function(){
+		
+	};
 
 	initChat();
 });

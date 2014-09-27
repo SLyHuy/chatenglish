@@ -1,0 +1,1240 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"d",
+				"direction"
+			],
+			[
+				"set",
+				"setPosition"
+			],
+			[
+				"vi",
+				"viewLayer"
+			],
+			[
+				"ma",
+				"maze"
+			],
+			[
+				"ve",
+				"velY"
+			],
+			[
+				"vel",
+				"velY"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"game",
+				"gameCanvas"
+			],
+			[
+				"sta",
+				"stage"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"str",
+				"stroke"
+			],
+			[
+				"Can",
+				"gameCanvas"
+			],
+			[
+				"y",
+				"yView"
+			],
+			[
+				"x",
+				"xView"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"st",
+				"strokeWidth"
+			],
+			[
+				"di",
+				"direction"
+			],
+			[
+				"pre",
+				"prePoint"
+			],
+			[
+				"r",
+				"right"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"gam",
+				"gameCanvas"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"pla",
+				"Platform"
+			],
+			[
+				"tex",
+				"text-indent"
+			],
+			[
+				"tim",
+				"timeout	setTimeout function"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"co",
+				"countText"
+			],
+			[
+				"id",
+				"idGenerate"
+			],
+			[
+				"ti",
+				"timer"
+			],
+			[
+				"chat",
+				"chatService"
+			],
+			[
+				"ws",
+				"wsID"
+			],
+			[
+				"send",
+				"sendMessage"
+			],
+			[
+				"WE",
+				"WebsocketService"
+			],
+			[
+				"call",
+				"callbacks"
+			],
+			[
+				"user",
+				"userID"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"cha",
+				"ChatApp"
+			],
+			[
+				"ad",
+				"addClass"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"type",
+				"typeof"
+			],
+			[
+				"play",
+				"playBtn"
+			],
+			[
+				"data",
+				"dataType"
+			],
+			[
+				"time",
+				"timeXX"
+			],
+			[
+				"pa",
+				"parseInt"
+			],
+			[
+				"sty",
+				"style"
+			],
+			[
+				"an",
+				"answered"
+			],
+			[
+				"clear",
+				"clearInterval"
+			],
+			[
+				"bt",
+				"btnOke"
+			],
+			[
+				"lo",
+				"loading"
+			],
+			[
+				"suc",
+				"success"
+			],
+			[
+				"cot",
+				"content"
+			],
+			[
+				"q",
+				"pageQ"
+			],
+			[
+				"de",
+				"deltaY"
+			],
+			[
+				"top",
+				"topList"
+			],
+			[
+				"ac",
+				"action"
+			],
+			[
+				"win",
+				"winH"
+			],
+			[
+				"wra",
+				"wrap-map"
+			],
+			[
+				"mai",
+				"mainTop"
+			],
+			[
+				"scroll",
+				"scrollTop"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"scro",
+				"scrollTop"
+			],
+			[
+				"ra",
+				"randomB"
+			],
+			[
+				"ar",
+				"arrA"
+			],
+			[
+				"img",
+				"imgTags"
+			],
+			[
+				"sl",
+				"slides"
+			],
+			[
+				"sli",
+				"slide2"
+			],
+			[
+				"slid",
+				"slide2"
+			],
+			[
+				"slide",
+				"slide1"
+			],
+			[
+				"json",
+				"json_encode"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"App",
+				"application"
+			],
+			[
+				"z",
+				"zIndex"
+			],
+			[
+				"app",
+				"appendTo"
+			],
+			[
+				"go",
+				"goingPage"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"load",
+				"loadImg"
+			],
+			[
+				"ban",
+				"bannerImgs"
+			],
+			[
+				"remo",
+				"removeClass"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"ini",
+				"inited"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"su",
+				"success"
+			],
+			[
+				"un",
+				"unbind"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"da",
+				"datepicker"
+			],
+			[
+				"date",
+				"dateArr"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"ba",
+				"background-attachment"
+			],
+			[
+				"limi",
+				"limit1"
+			],
+			[
+				"ste",
+				"step"
+			],
+			[
+				"fi",
+				"finish"
+			],
+			[
+				"us",
+				"userID"
+			],
+			[
+				"text",
+				"textTime"
+			],
+			[
+				"fta",
+				"fstart"
+			],
+			[
+				"link-can",
+				"link-cancel-disconnect"
+			],
+			[
+				"noti",
+				"notification"
+			],
+			[
+				"pro",
+				"promotion"
+			],
+			[
+				"acce",
+				"accept"
+			],
+			[
+				"notif",
+				"notification"
+			],
+			[
+				"hide",
+				"hidden"
+			],
+			[
+				"out",
+				"outcomming"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"outer",
+				"outerHeight"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"sett",
+				"setting"
+			],
+			[
+				"mess",
+				"message"
+			],
+			[
+				"ca",
+				"callRequestAPI"
+			],
+			[
+				"blo",
+				"blockUser"
+			],
+			[
+				"loadS",
+				"loadAsyn"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"use",
+				"userName2"
+			],
+			[
+				"prof",
+				"profile2"
+			],
+			[
+				"ava",
+				"avatar2"
+			],
+			[
+				"ex",
+				"externalsid"
+			],
+			[
+				"req",
+				"requests"
+			],
+			[
+				"av",
+				"avatar"
+			],
+			[
+				"Sti",
+				"StitMe"
+			],
+			[
+				"requ",
+				"requests"
+			],
+			[
+				"tota",
+				"totalLoadSyns"
+			],
+			[
+				"Us",
+				"UserB"
+			],
+			[
+				"acc",
+				"accountSID"
+			],
+			[
+				"ou",
+				"out"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/friction.js",
+			"settings":
+			{
+				"buffer_size": 956,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/start.js",
+			"settings":
+			{
+				"buffer_size": 13008,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/util.js",
+			"settings":
+			{
+				"buffer_size": 21389,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/index.html",
+			"settings":
+			{
+				"buffer_size": 1073,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/kinetic-v5.1.0.js",
+			"settings":
+			{
+				"buffer_size": 514338,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/css/screen.css",
+			"settings":
+			{
+				"buffer_size": 8226,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/l10n.js",
+			"settings":
+			{
+				"buffer_size": 15,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/lib.js",
+			"settings":
+			{
+				"buffer_size": 99834,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Document/SHuyLy/Dropbox/BooleanTech/html/stitme/beta/js/stitme.js",
+			"settings":
+			{
+				"buffer_size": 11309,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/YUI Compressor/YUI Compressor.sublime-build",
+	"command_palette":
+	{
+		"height": 311.0,
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 132.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": true,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Document/SHuyLy/Dropbox/BooleanTech/html/stitme/widget/js/stitme.js",
+		"/C/Document/SHuyLy/Dropbox/AppFacebook/ChuyenXeMuaHe - Lotteria/Demo/js/start.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/lib.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/l10n.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/kinetic.min.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/kinetic.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/all.js",
+		"/C/Users/huyly/Desktop/maze.png",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/stickers/sticker.xml",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/js/views/main.html",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/js/controllers/main-ctrl.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/index.html",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/chat/lib/websocket.v2.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/chat/lib/users.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/chat/lib/settings.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/config.xml",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/js/chat-app.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/js/chatapp-services.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/privacy-policy.html",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/cdv-plugin-fb-connect.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/js/controllers/chat-ctrl.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/facebook-js-sdk.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/js/views/chat.html",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www/css/style.css",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/chat/logerror.txt",
+		"/C/Users/huyly/chatapp.keystore",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/.gitignore",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/js/chat-app.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/js/controllers/main-ctrl.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/js/views/main.html",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/css/style.css",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/js/views/chat.html",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/js/chatapp-services.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/www0/js/controllers/chat-ctrl.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/chat/lib/websocket.js",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/chat/lib/cert/swind.vn.crt",
+		"/C/Users/huyly/Documents/GitHub/chatenglish/LICENSE",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/server.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/lib/websocket.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/server-2.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/lib/websocket.v2.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/lib/users.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/lib/settings.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/chat-app.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/lib/settings.json",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/index.html",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www-pagetab/index.html",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/controllers/chat-ctrl.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/controllers/main-ctrl.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/chatapp-services.js",
+		"/C/Users/huyly/AppData/Local/Temp/1-server.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/views/main.html",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/css/style.css",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www-pagetab/js/pagetab.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www-pagetab/css/style.css",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/node_modules/ws/index.js",
+		"/C/Users/huyly/AppData/Local/Temp/2-pagetab.js",
+		"/C/Document/SHuyLy/Dropbox/NhaTro/nhatro-team-workspace/html/css/screen.css",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www-pagetab/js/lib.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/views/chat.html",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/server.php",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/chat/public/js/chat-app.js",
+		"/C/Document/SHuyLy/Dropbox/BooleanTech/websocket/ChatApp/js/start.js",
+		"/C/Document/SHuyLy/Dropbox/BooleanTech/websocket/ChatApp/server.php",
+		"/C/Document/SHuyLy/Dropbox/BooleanTech/websocket/ChatApp/index.html",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/ionic.bundle.js",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/css/ionic.css",
+		"/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/sWind/ChatEnglish/www0/js/ionic.js",
+		"/C/Users/huyly/Desktop/ionic-v1.0.0-beta.10/version.json",
+		"/C/Users/huyly/AppData/Local/Temp/1-2.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-index.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-giai_thuong.php",
+		"/C/Users/huyly/AppData/Local/Temp/2-dang_anh.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-thele.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-dang_anh.php",
+		"/C/Users/huyly/AppData/Local/Temp/4-home.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-chi_tiet.php",
+		"/C/Users/huyly/AppData/Local/Temp/3-home.php",
+		"/C/Users/huyly/AppData/Local/Temp/2-home.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-home.php",
+		"/C/Users/huyly/AppData/Local/Temp/1-diem.php",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/ajax/submit.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/README.md",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/README.rdm",
+		"/D/SLyHuy/Dropbox/Training/Dice/index2.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/css/xuc-xac.css",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/js/prefixfree.min.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/ajax/get-question.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/ajax/get-question-2.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/ajax/get-question-3.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/js/lib.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/3.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/4.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/js/start.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/DoVuiDienAnh - Galaxy/HTML/3'.html",
+		"/D/SLyHuy/Dropbox/S/thiepcuoi/HTML/css/screen.css",
+		"/C/Users/S/AppData/Local/Temp/1-index.html",
+		"/C/Users/S/AppData/Local/Temp/1-single.php",
+		"/D/SLyHuy/BooleanTech/StitMeApp/StitMeApp/www/js/index.js",
+		"/D/SLyHuy/BooleanTech/StitMeApp/StitMeApp/www/js/controllers/Main_SettingsCtrl.js",
+		"/D/SLyHuy/BooleanTech/StitMeApp/StitMeApp/www/js/controllers/MainCtrl.js",
+		"/C/Users/S/AppData/Local/Temp/1-screen.css",
+		"/C/Users/S/AppData/Local/Temp/2-screen.css",
+		"/D/SLyHuy/Dropbox/BooleanTech/websocket/ChatApp/css/screen.css",
+		"/D/SLyHuy/Dropbox/BooleanTech/websocket/ChatApp/index2.html",
+		"/D/SLyHuy/Dropbox/BooleanTech/websocket/ChatApp/fancywebsocket.js",
+		"/D/SLyHuy/Dropbox/Sutrix/nodejs/chat/server.js",
+		"/D/SLyHuy/Dropbox/Sutrix/nodejs/chat/views/index.ejs",
+		"/D/SLyHuy/Dropbox/Sutrix/nodejs/chat/public/js/plugin.js",
+		"/D/SLyHuy/Dropbox/Sutrix/nodejs/chat/public/js/start.js",
+		"/D/SLyHuy/Dropbox/Sutrix/nodejs/chat/routes/todos.js",
+		"/D/SLyHuy/Dropbox/Sutrix/nodejs/chat/public/js/l10n.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - Vietrantour/html - PhotoContest Viettrantour/css/screen.css",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - Vietrantour/html - PhotoContest Viettrantour/chi_tiet.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/test.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/css/screen.css",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - Vietrantour/html - PhotoContest Viettrantour/js/start.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - Vietrantour/html - PhotoContest Viettrantour/bai_du_thi.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/bai_du_thi.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/chi_tiet.html",
+		"/C/Users/S/AppData/Local/Temp/1-index.php",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - VietSunTravel/html-vietsuntravel/bai_du_thi.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - VietSunTravel/html-vietsuntravel/chi_tiet.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/js/plugin.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/js/lib.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/index.html",
+		"/D/SLyHuy/Dropbox/AppFacebook/BoiContest- Vietrantour/boi-vietrantour-html/js/start.js",
+		"/D/SLyHuy/Dropbox/AppFacebook/PhotoContest - VietSunTravel/html-vietsuntravel/js/start.js"
+	],
+	"find":
+	{
+		"height": 85.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"callAjax",
+			"showMap",
+			"gameCanvas.width",
+			"xMe",
+			"drawMaze",
+			"viewLayer",
+			"drawMe",
+			"me",
+			"velY",
+			"updateMaze",
+			"game",
+			"control",
+			"updateMaze",
+			"setPosition",
+			"drawFunc",
+			"fillStyle",
+			"animation",
+			"gameLayer",
+			"animation",
+			"animat",
+			"keys",
+			"keydown",
+			"x",
+			"game",
+			"container",
+			"color",
+			"console.log",
+			"login",
+			"text-align: center;",
+			"focusInput",
+			"chatKeyPress",
+			"keyboardhide",
+			"scrollTo",
+			"chatDetailView",
+			"id=\"chatDetailView\"",
+			"checkLogin",
+			"callbackFB",
+			"alert",
+			"login",
+			"alert",
+			"login",
+			"Fb.login",
+			"doLogin",
+			"appService",
+			"doLogin",
+			"$interval",
+			"login",
+			"FB.login",
+			"$scope.$apply",
+			"doLogin",
+			"callbackFB",
+			"userData",
+			"doLogin",
+			".content",
+			"callbackReceiveMessage",
+			"receiveChat",
+			"sendMessage",
+			"existInList",
+			"closeRoom",
+			"current",
+			"findInRoom",
+			"body",
+			"checkLogin",
+			"textHeader",
+			"disconnect",
+			"chatService",
+			"exit",
+			"onClose",
+			"conso",
+			"WebsocketService",
+			"data",
+			"bindReceiveMessage",
+			"ConversationService",
+			"border",
+			"content",
+			"checkLogin",
+			"stageScene",
+			"clearInterval",
+			"btn-next",
+			"countDown",
+			"timeAnswer",
+			"getQuestion",
+			"btn-3.loa",
+			"btn-3",
+			"loading",
+			"btn-ne",
+			"countDown",
+			"setInte",
+			"buildQuestion",
+			".answer-block:before, .answer-block:after",
+			".mark",
+			"text-point",
+			"ifram",
+			"share",
+			"invite",
+			"thoa",
+			"thoat ga",
+			"act",
+			"Roboto",
+			"RobotoRegular",
+			"RobotoLight",
+			"1.4",
+			"inner",
+			"top-list",
+			"submit",
+			"before",
+			"loading",
+			"endPlay",
+			"goToPageXucXac",
+			"submitAnswerInit",
+			"buildQuestion",
+			"getQuestion",
+			"buildQuestion",
+			"getQuestion",
+			"platform",
+			"text-point",
+			");\n",
+			"platform",
+			"350px",
+			"success",
+			"dice-block",
+			"wrapper",
+			"back",
+			".back",
+			"getQuestion",
+			"btn",
+			"loading",
+			"nav:"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Vietrantour",
+			"external_sid",
+			"friendList",
+			"400ms",
+			"/^(\\+?|d+)?(\\(\\+?\\d+\\))?(-|\\s)?\\d+(-|\\s)?\\d+(-|\\s)?\\d+(-|\\s)?\\d+$/",
+			"",
+			"/^([a-zA-Z]+)([a-zA-Z0-9_\\.\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$/",
+			"/^([a-zA-Z0-9_\\.\\-])+\\@(([a-zA-Z0-9\\-])+\\.)+([a-zA-Z0-9]{2,4})+$/",
+			"\"description\" : [{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 1,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		},{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 3,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		},{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 2,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		},{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 4,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		}],",
+			"\"description\" : [{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 3,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		},{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 2,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		},{\n			title: {\n				href: '#',\n				text: 'Tours Centre St-Avertin'\n			},\n			address: '60 Rue Ronsard, <br />37100 Tours',\n			phone: '(+800) 976-400-806',\n			rating: 4,\n			comment: {\n				href: '#',\n				text: '23 avis clients'\n			},\n			viewmore: {\n				href: '#',\n				text: 'En savoir plus sur hôtel'\n			}\n		}],",
+			"App",
+			"fck"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/friction.js",
+					"settings":
+					{
+						"buffer_size": 956,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/start.js",
+					"settings":
+					{
+						"buffer_size": 13008,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1854,
+								1854
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1146.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/util.js",
+					"settings":
+					{
+						"buffer_size": 21389,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								339,
+								339
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/index.html",
+					"settings":
+					{
+						"buffer_size": 1073,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								505,
+								509
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/kinetic-v5.1.0.js",
+					"settings":
+					{
+						"buffer_size": 514338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								107801,
+								107801
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 67044.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/css/screen.css",
+					"settings":
+					{
+						"buffer_size": 8226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5490,
+								5490
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2166.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/l10n.js",
+					"settings":
+					{
+						"buffer_size": 15,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/C/Document/SHuyLy/Dropbox/ProjectWorkSpace/S-Games/MazeRunner/js/lib.js",
+					"settings":
+					{
+						"buffer_size": 99834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99834,
+								99834
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Document/SHuyLy/Dropbox/BooleanTech/html/stitme/beta/js/stitme.js",
+					"settings":
+					{
+						"buffer_size": 11309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								11309,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 155.0
+	},
+	"replace":
+	{
+		"height": 238.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 315.0,
+	"status_bar_visible": true
+}
