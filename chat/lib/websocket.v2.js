@@ -36,7 +36,8 @@ module.exports = function(ws){
 						type: 'chat',
 						message: 'Let\'s say "hi" with the Stranger. He has 342 liked.',
 						stranger: {
-							liked: 342
+							liked: 342,
+							isLiked: false
 						}
 					});
 					sendMessage(listWs[ws.strangerID], {
@@ -44,7 +45,8 @@ module.exports = function(ws){
 						type: 'chat',
 						message: 'Stranger has joined the room. He has 124 liked. Let\'s say "hi".',
 						stranger: {
-							liked: 124
+							liked: 124,
+							isLiked: false
 						}
 					});
 				}
