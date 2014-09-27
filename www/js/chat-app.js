@@ -1,8 +1,8 @@
 var Config = {
-	//fbAppId: '1449890398617312', //main app
+	// fbAppId: '1449890398617312', //main app
 	 fbAppId: '1464073817198970', // app test
-	//urlWebSocket: 'wss://swind.vn:9300',
-	 urlWebSocket: 'ws://127.0.0.1:9300'
+	urlWebSocket: 'wss://swind.vn:9300',
+	// urlWebSocket: 'ws://127.0.0.1:9300'
 };
 
 var ChatApp = angular.module('ChatApp', ['ionic'])

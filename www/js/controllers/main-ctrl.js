@@ -1,5 +1,5 @@
 ChatApp.controller('MainCtrl', function($scope, $state, $ionicLoading, appService){
-	$scope.title = 'Chat với người lạ by English';
+	$scope.title = 'Chat English';
 	$scope.titleBtn = 'New Chat';
 	$scope.textHeader = 'Start chatting with Stranger';
 	$scope.isLogin = window.isLogin = true;

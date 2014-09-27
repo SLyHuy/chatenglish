@@ -1,28 +1,14 @@
-ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $ionicScrollDelegate, chatService){
-	$scope.title = 'Chat với người lạ by English';
+ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $ionicScrollDelegate, $ionicPopover, $ionicModal, $ionicPopup, chatService){
+	$scope.title = 'Chat English';
 	$scope.chats = [];
-	// $scope.typingText = 'typing...';
+	$scope.reportData = {};
+
+	//$scope.haveStranger = true;
+	//$scope.strangerLiked = true;
 
 	console.log(userData);
 
-	//Developer...
-	//var data = [];
-
-	// var data = [{
-	// 	type: 'system',
-	// 	content : 'Waiting a stranger...'
-	// },{
-	// 	type: 'system',
-	// 	content : 'The stranger has joined the room. Let\'s say "Hi".'
-	// }];
-
-	function initChat(){
-		// $scope.chats = data;
-		// $timeout(function(){
-		// 	$ionicScrollDelegate.scrollBottom();
-		// }, 0, true);
-
-		
+	function initChat(){		
 		chatService.init({
 			callbackSendMessage: function(){},
 			callbackReceiveMessage: receiveChat,
@@ -32,7 +18,7 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 	};
 
 	function onClose(){
-		$scope.$apply(function(){	
+		$scope.$apply(function(){
 			$scope.chats.push({
 				type: 'system',
 				content: 'You has been disconnected, please exit and make new chat.'
@@ -80,7 +66,10 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 
 		//Check Like function
 		if (data.type == 'chat' && data.from == 'system' && data.stranger){
-			$scope.showLike = true;
+			$scope.haveStranger = true;			
+			$scope.strangerLiked = data.stranger.isLiked;
+
+			$scope.strangerLiked = false;
 		}
 
 		if (content){
@@ -166,6 +155,8 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 			action: 'like'
 		});
 
+		$scope.popoverChat.hide();
+
 		var content = {
 			type: 'system',
 			content : 'You\'ve just like the stranger. Thank you.'
@@ -175,43 +166,63 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 		$ionicScrollDelegate.scrollBottom(true);
 	};
 
-	// var countText = 0;
-	// $interval(function(){
-	// 	countText = (countText + 1) % 4;
-	// 	$scope.typingText = 'typing' + '...'.substr(3 - countText);
-	// 	// $scope.$apply(function(){
-	// 	// 	$scope.typingText = 'typing' + '...'.substr(3 - countText);
-	// 	// });
+	$ionicPopover.fromTemplateUrl('templates/popover.html', {
+		scope: $scope,
+	}).then(function(popover) {
+    	$scope.popoverChat = popover;
+	});
 
-	// }, 500);
+	$scope.showPopoverChat = function($event){
+		$scope.popoverChat.show($event);
+	};
 
-	// data = data.concat([{
-	// 	type: 'me',
-	// 	content : 'You at the airport yet aaa?'
-	// },{
-	// 	type: 'me',
-	// 	content : 'I\'m in trafic. Wondering if we have to go through is customs in Toronto or San Francisco.'
-	// },{
-	// 	type: 'stranger',
-	// 	content : 'Customs in toronto'
-	// },{
-	// 	type: 'me',
-	// 	content : 'Sweet. Thx brah'
-	// },{
-	// 	type: 'time',
-	// 	date: 'Thu, Sep 19',
-	// 	time: '1:26 PM'
-	// },{
-	// 	type: 'me',
-	// 	content : 'Sub b.'
-	// },{
-	// 	type: 'time',
-	// 	date: 'Sun, Sep 22',
-	// 	time: '4:18 PM'
-	// },{
-	// 	type: 'stranger',
-	// 	content : 'Just chillin\'s and hanging out bro. What\'s your plans tomm? Are we still doing that thing we discussed about?'
-	// }]);
+	$ionicModal.fromTemplateUrl('templates/report-modal.html', {
+		scope: $scope,
+		animation: 'slide-in-up'
+	}).then(function(modal){
+		$scope.reportModal = modal;
+	});
+
+	$scope.openReportModal = function(){
+		if ($scope.reported){
+			return false;
+		}
+		$scope.reportModal.show();
+	};
+
+	$scope.closeReportModal = function(){
+		$scope.reportModal.hide();
+	};
+
+	$scope.sendReport = function(){
+		if ($scope.reported){
+			return false;
+		}
+
+		if (!$scope.reportData.reason){
+			$ionicPopup.alert({
+				template: '<h4 class="title text-center">Please choose reason</h4>'
+			});
+		}
+		else{
+			chatService.sendMessage({
+				type: 'report',
+				reason: $scope.reportData.reason
+			});
+			$scope.reported = true;
+
+			$ionicPopup.alert({
+				template: '<h4 class="title text-center">Your report has been sent. Thank you.</h4>'
+			}).then(function(){
+				$scope.reportModal.hide();
+				$scope.popoverChat.hide();
+			});
+
+		}
+	};
+
+
+
 
 	initChat();
 });
