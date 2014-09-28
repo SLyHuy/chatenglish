@@ -205,6 +205,7 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 			type: 'action',
 			action: 'like'
 		});
+		$scope.infoStranger.liked++;
 
 		$scope.popoverChat.hide();
 
