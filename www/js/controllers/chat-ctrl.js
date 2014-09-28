@@ -1,14 +1,25 @@
-ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $ionicScrollDelegate, $ionicPopover, $ionicModal, $ionicPopup, chatService){
+ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $ionicScrollDelegate, $ionicPopover, $ionicModal, $ionicPopup, $ionicNavBarDelegate, chatService){
 	$scope.title = 'Chat English';
 	$scope.chats = [];
 	$scope.reportData = {};
 
+	$scope.inBlockList = false;
+	var blocks = [];
+	var isBlock = false;
+
+
 	//$scope.haveStranger = true;
 	//$scope.strangerLiked = true;
 
-	console.log(userData);
+	//console.log(userData);
 
-	function initChat(){		
+	function initChat(){
+
+		var localBlocks = window.localStorage.getItem('blocks');
+		if (localBlocks){
+			blocks = JSON.parse(localBlocks);
+		}
+
 		chatService.init({
 			callbackSendMessage: function(){},
 			callbackReceiveMessage: receiveChat,
@@ -65,13 +76,55 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 		}
 
 		//Check Like function
-		if (data.type == 'chat' && data.from == 'system' && data.stranger){
+		if (data.stranger){
 			$scope.haveStranger = true;			
 			$scope.strangerLiked = data.stranger.isLiked;
+
+			$scope.infoStranger = {
+				fullId: data.stranger.id,
+				shortId: parseInt(data.stranger.id, 10),
+				liked: data.stranger.liked
+			};
+
+			//Check blocklist
+			if (data.from == 'system'){
+				for (var i = 0; i < blocks.length; i++){
+					if (blocks[i] == data.stranger.id){
+						isBlock = true;
+						$scope.inBlockList = true;
+						break;
+					}
+				}
+
+				if (isBlock){
+					$ionicPopup.confirm({
+						title: '',
+						template: '<h4 class="title text-center">Stranger was blocked by you. Do you want to continue to chat with him?</h4>',
+						cancelText: 'Yes',
+						okText: 'No, I don\'t.'
+					}).then(function(res){
+						if (!res){
+							//Yes
+							isBlock = false;
+						}
+						else {
+							//No
+							chatService.exit();
+							$ionicNavBarDelegate.back();
+						}
+					});
+				}
+			}
+			
 		}
 
 		if (content){
-			$scope.chats.push(content);
+			if (isBlock && data.from == 'stranger'){
+
+			}
+			else{
+				$scope.chats.push(content);
+			}			
 		}
 		
 		$scope.$apply(function(){			
@@ -219,7 +272,59 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 		}
 	};
 
+	$ionicModal.fromTemplateUrl('templates/info-modal.html', {
+		scope: $scope,
+		animation: 'slide-in-up'
+	}).then(function(modal){
+		$scope.infoModal = modal;
+	});
 
+	$scope.openInfoModal = function(){
+		$scope.infoModal.show();
+	};
+
+	$scope.closeInfoModal = function(){
+		$scope.infoModal.hide();
+	};
+
+	$scope.blockStranger = function(){
+		var template = '<h4 class="title text-center">Do you want block stranger and exit?</h4>';
+		if ($scope.inBlockList){
+			template = '<h4 class="title text-center">Do you want unblock stranger?</h4>';
+		}
+		$ionicPopup.confirm({
+			title: '',
+			template: template,
+			okText: 'Yes'
+		}).then(function(res){
+			if (res){
+				if ($scope.inBlockList == false){
+					blocks.push($scope.infoStranger.fullId);
+					window.localStorage.setItem('blocks', JSON.stringify(blocks));
+					$scope.inBlockList = true;
+
+					$scope.popoverChat.hide();
+					chatService.exit();
+					$ionicNavBarDelegate.back();
+				}
+				else{
+					for (var i = 0; i < blocks.length; i++){
+						if (blocks[i] == $scope.infoStranger.fullId){
+							blocks.splice(i, 1);
+							break;
+						}
+					}
+					$scope.inBlockList = false;
+					isBlock = false;
+					$scope.popoverChat.hide();
+				}				
+			}
+			else {
+				
+			}
+		});
+		
+	};
 
 
 	initChat();
@@ -228,7 +333,7 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 
 ChatApp.controller('navBarCtrl', function($scope, $state, $ionicNavBarDelegate, chatService){
 	$scope.exit = function(){
-		console.log('User exit!!');
+		//console.log('User exit!!');
 		chatService.exit();
 
 		$ionicNavBarDelegate.back();

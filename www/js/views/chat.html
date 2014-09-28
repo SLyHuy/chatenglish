@@ -47,10 +47,10 @@
 				<a class="item item-icon-left" href="javascript:void(0);" ng-click="openReportModal()">
 					<i class="icon ion-ios7-flag-outline" ng-class="{'s-color': !reported, 'color-liked-stranger': reported}"></i>Report
 				</a>
-				<a class="item item-icon-left" href="javascript:void(0);">
-					<i class="icon ion-email ion-ios7-minus-outline s-color" ></i>Block
+				<a class="item item-icon-left" href="javascript:void(0);" ng-click="blockStranger()">
+					<i class="icon ion-email ion-ios7-minus-outline s-color"></i>{{inBlockList ? 'UnBlock' : 'Block'}}
 				</a>
-				<a class="item item-icon-left" href="javascript:void(0);">
+				<a class="item item-icon-left" href="javascript:void(0);" ng-click="openInfoModal()">
 					<i class="icon ion-email ion-ios7-information-outline s-color" ></i>Info
 				</a>
 			</div>
@@ -103,6 +103,35 @@
 		</div>
 
 		
+	</ion-content>
+  </ion-modal-view>
+</script>
+
+<script id="templates/info-modal.html" type="text/ng-template">
+  <ion-modal-view>
+	<ion-header-bar>
+	  <h1 class="title">Info Stranger</h1>
+	  <div class="button button-clear" ng-click="closeInfoModal()"><span class="icon ion-ios7-close-empty s-color"></span></div>
+	</ion-header-bar>
+	<ion-content>
+		<div class="list">
+			<div class="item">
+				<h2>Identify</h2>
+				<p style="white-space: normal;">Short Id: <strong>#{{infoStranger.shortId}}</strong>
+				<br/>
+				Full Id: <strong>#{{infoStranger.fullId}}</strong>
+				</p>
+			</div>
+			<div class="item">
+				<h2>Liked</h2>
+				<p>Liked of Stranger: <strong>{{infoStranger.liked}}</strong></p>
+			</div>
+		</div>
+		<div class="item text-center">
+			<button class="button button-positive" ng-click="closeInfoModal()">
+				Close
+			</button>
+		</div>
 	</ion-content>
   </ion-modal-view>
 </script>

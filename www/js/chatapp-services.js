@@ -1,7 +1,6 @@
 ChatApp.factory('appService', function(/*$location, $rootScope, $http, $state, $ionicLoading*/ ) {
 	function checkLogin(callback){
 		window.FB.getLoginStatus(function(response) {
-			console.log(response);
 			if (response.status === 'connected') {
 				callback && callback(response.authResponse);
 			}
@@ -13,14 +12,10 @@ ChatApp.factory('appService', function(/*$location, $rootScope, $http, $state, $
 
 	function doLogin(callback){
 		FB.login(function(response) {
-			console.log(response);
 			if(response.authResponse) {
-				// FB.api('/me', function(response) {
-				// 	console.log(response);
-				// });
 				callback && callback(response.authResponse);
 			} else {
-				console.log('User cancelled login or did not fully authorize.');
+				//console.log('User cancelled login or did not fully authorize.');
 				callback && callback(false);
 			}
 		});
@@ -42,17 +37,12 @@ ChatApp.factory('chatService', function(/*$location, $rootScope, $http, $state, 
 	};
 
 	function onConnect(){
-		console.log('Websocket connected!!');
-		// for (var i = 0 ; i < _querePendingMessage.length ; i++){
-		// 	var message = _querePendingMessage[i];
-		// 	sendSocketMessage(message.type, message.content);
-		// }
-		// _querePendingMessage = [];
+		//console.log('Websocket connected!!');
 		callbacks.callbackConnect && callbacks.callbackConnect();
 	};
 
 	function onClose(){
-		console.log('Websocket close');
+		//console.log('Websocket close');
 		callbacks.callbackClose && callbacks.callbackClose();
 	};
 
@@ -66,7 +56,7 @@ ChatApp.factory('chatService', function(/*$location, $rootScope, $http, $state, 
 			}
 			var url = Config.urlWebSocket + '?userID=' + userData.userID + '&accessToken=' + userData.accessToken + '&uuid=' + uuid;
 			
-			console.log('Connecting... ' + url);
+			//console.log('Connecting... ' + url);
 			WebsocketService.unbind('open', onConnect);
 			WebsocketService.unbind('close', onClose);
 			WebsocketService.unbind('message', onReceiceMessage);
@@ -75,8 +65,6 @@ ChatApp.factory('chatService', function(/*$location, $rootScope, $http, $state, 
 			WebsocketService.bind('close', onClose);
 			WebsocketService.bind('message', onReceiceMessage);
 			WebsocketService.connect(url);
-
-			console.log(state);
 
 			return false;
 		}
@@ -87,7 +75,7 @@ ChatApp.factory('chatService', function(/*$location, $rootScope, $http, $state, 
 	};
 
 	function onReceiceMessage(payload){
-		console.log(payload);
+		//console.log(payload);
 		payload = angular.fromJson(payload);
 
 		callbacks.callbackReceiveMessage && callbacks.callbackReceiveMessage(payload);
@@ -138,9 +126,7 @@ ChatApp.factory('WebsocketService', function(){
 	}
 
 	function send(event_name, event_data){
-		// console.log('websocket send: ' + JSON.stringify(event_data));
-		// conn.send(JSON.stringify(event_data));
-		console.log('websocket send: ' + event_data);
+		//console.log('websocket send: ' + event_data);
 		if (conn.readyState == 1){
 			conn.send(event_data);
 		}
