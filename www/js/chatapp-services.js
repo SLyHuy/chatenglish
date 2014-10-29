@@ -2,7 +2,11 @@ ChatApp.factory('appService', function(/*$location, $rootScope, $http, $state, $
 	function checkLogin(callback){
 		window.FB.getLoginStatus(function(response) {
 			if (response.status === 'connected') {
-				callback && callback(response.authResponse);
+				FB.api('/me', {fields: 'name'}, function(nameRes) {
+					response.authResponse.name = nameRes.name;
+					callback && callback(response.authResponse);
+				});
+				
 			}
 			else{
 				callback && callback(false);
@@ -13,7 +17,10 @@ ChatApp.factory('appService', function(/*$location, $rootScope, $http, $state, $
 	function doLogin(callback){
 		FB.login(function(response) {
 			if(response.authResponse) {
-				callback && callback(response.authResponse);
+				FB.api('/me', {fields: 'name'}, function(nameRes) {
+					response.authResponse.name = nameRes.name;
+					callback && callback(response.authResponse);
+				});
 			} else {
 				//console.log('User cancelled login or did not fully authorize.');
 				callback && callback(false);
@@ -48,7 +55,6 @@ ChatApp.factory('chatService', function(/*$location, $rootScope, $http, $state, 
 
 	function ensureConnect(){
 		var state = WebsocketService.getState();
-		console.log(state);
 		if (state !== 0 && state !== 1) {
 			var uuid = 'browser';
 			if (window.device){

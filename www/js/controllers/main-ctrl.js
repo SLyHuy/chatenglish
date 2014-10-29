@@ -43,7 +43,7 @@ ChatApp.controller('MainCtrl', function($scope, $state, $ionicLoading, appServic
 				if (response){
 					window.isLogin = $scope.isLogin = true;
 					$scope.titleBtn = 'New Chat';
-					$scope.textHeader = 'Start chatting with Stranger';
+					$scope.textHeader = 'Hi ' + response.name + ', let\'s start chatting with Stranger';
 
 					window.userData = response;
 				}

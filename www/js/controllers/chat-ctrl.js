@@ -16,9 +16,15 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 	function initChat(){
 
 		var localBlocks = window.localStorage.getItem('blocks');
-		if (localBlocks){
-			blocks = JSON.parse(localBlocks);
+		if (localBlocks && userData.userID){
+			blocks = JSON.parse(localBlocks)[userData.userID];
+			if (!blocks){
+				blocks = [];
+				window.localStorage.removeItem('blocks');
+			}
 		}
+
+		console.log(blocks);
 
 		chatService.init({
 			callbackSendMessage: function(){},
@@ -83,7 +89,9 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 			$scope.infoStranger = {
 				fullId: data.stranger.id,
 				shortId: parseInt(data.stranger.id, 10),
-				liked: data.stranger.liked
+				liked: data.stranger.liked,
+				name: data.stranger.name,
+				avatar: data.stranger.avatar || 'lol'
 			};
 
 			//Check blocklist
@@ -127,7 +135,7 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 			}			
 		}
 		
-		$scope.$apply(function(){			
+		$scope.$apply(function(){
 			$ionicScrollDelegate.scrollBottom(true);
 		});
 	}
@@ -301,7 +309,11 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 			if (res){
 				if ($scope.inBlockList == false){
 					blocks.push($scope.infoStranger.fullId);
-					window.localStorage.setItem('blocks', JSON.stringify(blocks));
+
+					var obj = {};
+					obj[userData.userID] = blocks;
+					window.localStorage.setItem('blocks', JSON.stringify(obj));
+
 					$scope.inBlockList = true;
 
 					$scope.popoverChat.hide();
@@ -315,6 +327,11 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 							break;
 						}
 					}
+
+					var obj = {};
+					obj[userData.userID] = blocks;
+					window.localStorage.setItem('blocks', JSON.stringify(obj));
+
 					$scope.inBlockList = false;
 					isBlock = false;
 					$scope.popoverChat.hide();
