@@ -3,8 +3,13 @@ ChatApp.factory('appService', function(/*$location, $rootScope, $http, $state, $
 		window.FB.getLoginStatus(function(response) {
 			if (response.status === 'connected') {
 				FB.api('/me', {fields: 'name'}, function(nameRes) {
-					response.authResponse.name = nameRes.name;
-					callback && callback(response.authResponse);
+					if (!nameRes || nameRes.error){
+						callback && callback(false);
+					}
+					else{
+						response.authResponse.name = nameRes.name;
+						callback && callback(response.authResponse);
+					}					
 				});
 				
 			}
