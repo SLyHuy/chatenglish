@@ -91,7 +91,7 @@ ChatApp.controller('ChatCtrl', function($scope, $state, $timeout, $interval, $io
 				shortId: parseInt(data.stranger.id, 10),
 				liked: data.stranger.liked,
 				name: data.stranger.name,
-				avatar: data.stranger.avatar || 'lol'
+				avatar: data.stranger.avatar
 			};
 
 			//Check blocklist
